@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "71064898991",
+    "project_id": "alertas-seguranca",
+    "storage_bucket": "alertas-seguranca.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71064898991:android:11a5ef3749b9224540b35a",
+        "android_client_info": {
+          "package_name": "com.example.atividade"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhHFexNHLN5x3xAPCNd4YGGgFlly6EM48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
