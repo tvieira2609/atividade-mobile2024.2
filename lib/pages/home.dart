@@ -37,6 +37,13 @@ class HomePage extends ConsumerWidget {
                 return const CircularProgressIndicator();
               }),
         ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            // Add your action here
+            debugPrint('FAB pressed');
+          },
+          child: const Icon(Icons.add),
+        ),
         drawer: const DrawerExample());
   }
 }

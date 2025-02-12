@@ -29,6 +29,13 @@ class ProfilePage extends ConsumerWidget {
               }
               return const CircularProgressIndicator();
             }),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            // Add FAB action here
+            debugPrint('FAB pressed');
+          },
+          child: const Icon(Icons.add),
+        ),
         drawer: const DrawerExample());
   }
 }

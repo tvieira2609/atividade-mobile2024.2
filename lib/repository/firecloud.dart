@@ -75,21 +75,20 @@ class FirecloudRepository implements FirecloudDataSource {
     try {
       final query = instance.collection('empresas').where('id', isEqualTo: '1');
       final snapshot = await query.get();
-      print(snapshot.docs.first.data());
       return EmpresasModel.fromFirestore(snapshot.docs.first);
     } catch (e) {
       throw Exception("Error fetching alerts: $e");
     }
   }
-
   @override
   Future<List<AlertasModel>> recuperaListaAlertas() async {
     try {
       final query = instance.collection('alertas');
       final snapshot = await query.get();
-      return snapshot.docs
+      final results = snapshot.docs
           .map<AlertasModel>((doc) => AlertasModel.fromFirestore(doc))
           .toList();
+      return results;
     } catch (e) {
       throw Exception("Error fetching alerts: $e");
     }
